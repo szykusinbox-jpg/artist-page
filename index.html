@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Artist Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="artist">
+
+        <div class="lang-switcher">
+            <img src="https://flagcdn.com/w40/gb.png" alt="English" data-lang="en" class="flag active">
+            <img src="https://flagcdn.com/w40/pl.png" alt="Polski" data-lang="pl" class="flag">
+        </div>
+
+        <h1 data-i18n="artistName">Artist Name</h1>
+
+        <p class="bio" data-i18n="bio">
+            Contemporary painter exploring emotion, abstraction and landscapes.
+        </p>
+
+        <div class="links">
+            <a href="https://www.instagram.com/artur_olszewski_/" data-i18n="instagram">Instagram</a>
+            <a href="https://www.facebook.com/arturolszewski616/" data-i18n="facebook">Facebook</a>
+            <a href="mailto:olszewskiartur4@gmail.com" data-i18n="mailMe">Mail Me</a>
+        </div>
+
+    </header>
+
+
+    <section class="toolbar">
+
+        <select id="filter">
+            <option value="all" data-i18n="filterAll">All paintings</option>
+            <option value="available" data-i18n="filterAvailable">Available</option>
+            <option value="sold" data-i18n="filterSold">Sold</option>
+        </select>
+
+    </section>
+
+
+    <section id="gallery" class="gallery"></section>
+
+
+    <div id="modal" class="modal">
+        <span id="closeModal">&times;</span>
+        <img id="modalImg">
+        <div id="modalInfo"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
